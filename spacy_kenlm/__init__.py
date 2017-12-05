@@ -32,11 +32,9 @@ class spaCyKenLM(object):
         Token.set_extension('kenlm_score', default=0.)
         # TODO: add perplexity?
 
-        Doc.set_extension('kenlm_full_scores', getter=self.get_full_scores)
-
     def __call__(self, doc):
 
-        full_scores = doc._.kenlm_full_scores
+        full_scores = self.get_full_scores(doc)
         
         for token, score in zip(doc, full_scores):
             token._.kenlm_score = score
