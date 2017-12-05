@@ -10,9 +10,6 @@ if __name__ == '__main__':
 
     doc = nlp('How are you?')
 
-    for score in doc._.kenlm_full_scores:
-        assert score < 0
-
     assert doc._.kenlm_score < 0
 
     for token in doc:
