@@ -37,5 +37,6 @@ if __name__ == '__main__':
             'spacy>=2.0.0',
             'kenlm',
         ],
+        include_package_data=True,
         zip_safe=False,
     )

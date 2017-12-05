@@ -1,2 +1,2 @@
 include README.md
-include test.arpa
+include spacy_kenlm/test.arpa
