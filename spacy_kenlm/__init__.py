@@ -8,7 +8,7 @@ from spacy.tokens import Doc, Span, Token
 
 from spacy_kenlm._about import __version__
 
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
 TEST_PATH = os.path.join(ROOT_DIR, 'test.arpa')
 
 
